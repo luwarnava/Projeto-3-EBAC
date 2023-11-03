@@ -1,0 +1,441 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%; /* 10px */ 
+    
+    --font-family-Quick: 'Quicksand', sans-serif;
+    --font-family-Rob: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: #e8ecf0;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    background-color: black;
+}
+.navbar button{
+    background-color: #e0e7ee;
+    margin-right: 2rem;
+}
+.name, .nav-link {
+    font-family: var(--font-family-Quick);
+    color: aliceblue;
+}
+.name {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin-left: 2rem   ;
+}
+.name:hover {
+    color: aliceblue;
+}
+.nav-link {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #e0e7ee;
+}
+.nav-link:focus {
+    color: #c2c7cd;
+}
+
+
+
+.carousel {
+    margin-top: 2rem;
+}
+.carousel-item img {
+    border-radius: 2rem;
+}
+
+
+
+.container {
+    margin-top: 2rem;
+    text-align: center;
+
+    padding: 2rem 0;
+
+    background: linear-gradient(90deg, #e8ecf0, #e1e4e4 30%, #e8ecf0);
+
+    border-radius: 2%;
+}
+.container h1{
+    font-family: var(--font-family-Quick);
+    font-size: 2.8rem;
+
+    margin-top: 1rem;
+}
+.container p {
+    font-family: var(--font-family-Rob);
+    font-size: 1.2rem;
+
+    margin: 0 4rem;
+    
+}
+.container img {
+    width: 50vw;
+    height: 23vh;
+
+    border-radius: 50%;
+}
+
+
+.cardapio, .h3Event {
+    background-color: black;
+
+    border-radius: .8rem;
+
+    margin-top: 4rem;
+}
+.cardapio h2, .eventos h3 {
+    font-family: var(--font-family-Quick);
+    font-size: 1.8rem;
+    color: #e0e7ee;
+
+    padding: .8rem;
+
+    margin-left: 4.6rem;
+}
+
+
+.menu button {
+    font-family: var(--font-family-Quick);
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    padding: .6rem;
+    margin-top: .30rem;
+    
+    border: solid black .1rem;
+    border-radius: .5rem;
+
+    background-color: black;
+    color: #c2c7cd;
+}
+.menu button:hover {
+    background-color: #131314;
+}
+
+.starterCourse {
+    margin-bottom: 2rem;
+}
+.starterCourse, .combined, .drinks {
+    margin-right: 3.8rem;
+    margin-left: 3.8rem;
+    margin-top: .2rem;
+}
+.starterCourse h5, .combined h5, .drinks h5 {
+    font-family: var(--font-family-Quick);
+    font-size: 1.8rem;
+}
+
+.card h6 {
+    font-family: var(--font-family-Quick);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.buyButton {
+    font-size: 1.3rem;
+    font-family: var(--font-family-Rob);
+
+    background-color: #fbfefe;
+    color: #131314;
+
+    padding: .3rem .8rem;
+
+    display: block;
+    margin: 0 auto;
+
+    border-radius: .5rem;
+    
+}
+.buyButton:hover {
+    background-color: #e4e7ea;
+}
+
+.combined h5 {
+    font-size: 1.6rem;
+}
+.combined div, .drinks div {
+    margin-bottom: .5rem;
+}
+
+
+.h3Event {
+    margin-top: 15rem;
+}
+.events, .infos {
+    background: linear-gradient(90deg, #e8ecf0, #c4c4c4 30%, #e8ecf0);
+    padding-bottom: 2rem;
+}
+
+.cardEvents {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 2rem;
+}
+.cardEvents h5 {
+    font-family: var(--font-family-Quick);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+
+.cardInfos {
+    margin: .8rem 2rem 2rem;
+
+    background: rgba(189, 189, 189, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(1.1px);
+    border: 1px solid rgba(189, 189, 189, 0.54);
+}
+.cardInfos h5 {
+    font-family: var(--font-family-Quick);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.cardInfos p {
+    font-family: var(--font-family-Rob);
+    font-size: 1.2rem;
+
+    margin-top: 1rem;
+}
+
+
+.secao2 li {
+    list-style: none;
+    display: inline;
+}
+.secao2 a {
+    text-decoration: none;
+    color: #131314;
+}
+.secao2 img {
+    width: 2.5rem;
+    margin: .5rem 3rem 1rem -2rem;
+}
+.tel {
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: black;
+}
+.footer p {
+    font-family: var(--font-family-Rob);
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+    .menu button {
+        margin-left: 1rem;
+    }
+
+}
+@media screen and (min-width: 425px) {
+    .menu button {
+        margin-left: 2rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        padding: 0 0.9rem 0 .9rem;
+        background-color: black;
+
+        border-radius: 2rem;    
+    }
+    .carousel-item  img {
+        height: 30vh;
+        padding: .2rem 12rem;
+    }
+
+    .container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #aboutImg img {
+        width: 30vw;
+        height: 35vh;
+
+        margin-left: 10rem;
+    }
+    #aboutUs {
+        text-align: left;
+    }
+    #aboutUs h1 {
+        margin-left: 3.5rem;
+    }
+
+    .cardapio {
+        margin-top: 6rem;
+    }
+
+    .menu button {
+        margin: 1.5rem 6.5rem;
+        padding: .4rem 1.4rem;
+    }
+
+    .starterCourse {
+        margin-right: 6rem;
+        margin-left: 6rem;
+        margin-top: .2rem;
+    }
+
+    .cardEvents {
+        width: 95vw;
+    }
+    .secao2 img {
+        margin: .5rem 3rem .1rem -2rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .carousel {
+        padding: 0 10rem;
+        background-color: black;
+
+        margin: 2rem;
+    }
+    .carousel-item  img {
+        padding: .2rem 5rem;
+    }
+    .control-icon {
+        margin: 0 10rem 0 14rem;
+    }
+
+    #aboutUs p {
+        padding-right: 10rem;
+    }
+
+    .cardapio, .h3Event {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .cardapio h2, .h3Event h3 {
+        font-size: 2rem;
+        margin-left: 8rem;
+    }
+
+    .menu button {
+        font-size: 1.6rem;
+        padding: .6rem 1.5rem;
+        margin: 2rem 4rem;
+    }
+    button:first-child {
+        margin-left: 22rem;
+    }
+    .starterCourse {
+        width: 68vw;
+        margin-left: 21.5rem;
+    }
+    .card:first-child {
+        margin-right: 10rem;
+    }
+    .combined, .drinks {
+        margin-left: 5rem;
+    }
+    .cardEvents {
+        margin-left: 8rem;
+    }
+    .infos {
+        padding-top: 2rem;
+    }
+    .secao1 {
+        padding-left: 10rem;
+        text-align: center;
+    }
+    .secao2 {
+        text-align: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .carousel {
+        background-color: black;
+    }
+    .carousel-item  img {
+        padding: 0 20rem;
+        height: 30vh;
+    }
+    .control-icon {
+        margin: 0 20rem 0 24rem;
+    }
+
+    #aboutImg img {
+        width: 24vw;
+        height: 40vh;
+
+        margin-left: 20rem;
+    }
+    #aboutUs h1 {
+        font-size: 3.8rem;
+    }
+    #aboutUs p {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        margin-right: 15rem;
+
+    }
+
+    .cardapio h2 {
+        font-size: 2.6rem;
+    }
+
+    button:first-child {
+        margin-left: 46rem;
+    }
+    .starterCourse {
+        margin-left: 30rem;
+    }
+
+    .secao2 {
+        width: 40vw;
+        text-align: center;
+    }
+}
